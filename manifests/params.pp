@@ -475,7 +475,7 @@ class snmp::params {
       $service_config_perms     = '0600'
       $service_config_dir_group = 'root'
       $service_name             = 'snmpd'
-      $snmpd_options            = "-Lsd -Lf /dev/null -u $varnetsnmp_owner -g $varnetsnmp_group -I -smux -p /var/run/snmpd.pid"
+      $snmpd_options            = "-Lsd -Lf /dev/null -u ${varnetsnmp_owner} -g ${varnetsnmp_group} -I -smux -p /var/run/snmpd.pid"
       $sysconfig                = '/etc/default/snmpd'
       $var_net_snmp             = '/var/lib/snmp'
       $varnetsnmp_perms         = '0755'
